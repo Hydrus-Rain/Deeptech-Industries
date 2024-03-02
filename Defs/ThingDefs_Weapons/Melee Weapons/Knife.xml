@@ -7,8 +7,9 @@
 		<techLevel>Ultra</techLevel>
 		<description>Standard Issue Knife. Reliable, Cheap, And Ease of Maintenance. Used by Majority of the Institute Sec. Corps and Majority of the RnD Researchers.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Melee/Deeptech_Knife</texPath>
+			<texPath>Things/Weapons/Melee/Knife</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<uiIconScale>1.6</uiIconScale>
 		<statBases>
