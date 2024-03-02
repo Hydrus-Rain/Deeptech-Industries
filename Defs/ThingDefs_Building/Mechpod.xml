@@ -1,6 +1,6 @@
  <Defs>
    <ThingDef ParentName="BedWithQualityBase">
-    <defName>DTCBed</defName>
+    <defName>DTCBe</defName>
     <label>Deeptech bed</label>
 	<thingClass>MechHumanlikes.Building_ChargingBed</thingClass>
 	<tickerType>Rare</tickerType>
