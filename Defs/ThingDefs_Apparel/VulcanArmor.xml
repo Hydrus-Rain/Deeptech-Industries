@@ -9,7 +9,7 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>FabricationBench</li>
+                <li>synthbench</li>
             </recipeUsers>
         </recipeMaker>
         <graphicData>
@@ -100,7 +100,7 @@
         <statBases>
             <Mass>1.5</Mass>
             <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
+            <Insulation_Heat>4</Insulation_Heat>
         </statBases>
         <apparel>
             <bodyPartGroups>
