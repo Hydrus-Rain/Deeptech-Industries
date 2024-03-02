@@ -75,7 +75,7 @@
                 <li>Hands</li>
                 <li>Feet</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Apparel/VulkanSet/VulkanArmor/VulkanArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/VulkanSet/VulkanArmor/VulkanArmor_Male</wornGraphicPath>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
