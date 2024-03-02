@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>DTC_MeleeWeapon_Fist</defName>
+		<label>deeptech Fist(placeholder)</label>
+		<description>Used By Heavy Corps to Breach Ship Hulls, Asteroids, and Smash Heavy Armor or Chitinous Carapaces</description>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/PowerFist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<defaultIngredientFilter IsNull="True"/>
+			<unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>130</Plasteel>
+			<Uranium>10</Uranium>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<tools>
+			<li>
+				<label>fist</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17.7</power>
+				<cooldownTime>1.75</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Sword-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>DTC_MeleeWeapon_Sword</defName>
+		<label>deeptech sword(placeholder)</label>
+		<description>a single edged Rift sword,lighter and faster but hits weaker than the broadsword</description>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Sword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>33</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>33</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<Uranium>1</Uranium>
+			<Steel>1</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<defaultIngredientFilter IsNull="True"/>
+			<unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

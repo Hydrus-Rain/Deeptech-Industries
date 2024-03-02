@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Knife-->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>DTC_MeleeWeapon_Knife</defName>
+		<label>deeptech knife(placeholder)</label>
+		<techLevel>Ultra</techLevel>
+		<description>Standard Issue Knife. Reliable, Cheap, And Ease of Maintenance. Used by Majority of the Institute Sec. Corps and Majority of the RnD Researchers.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Melee/Deeptech_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
+		<statBases>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<Uranium>1</Uranium>
+			<Steel>1</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<recipeMaker>
+			<defaultIngredientFilter IsNull="True"/>
+			<unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+</Defs>
