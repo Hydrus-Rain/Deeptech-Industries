@@ -1,0 +1,65 @@
+ <Defs>
+   <ThingDef ParentName="BedWithQualityBase">
+    <defName>DTCBed</defName>
+    <label>Deeptech bed</label>
+	<thingClass>MechHumanlikes.Building_ChargingBed</thingClass>
+	<tickerType>Rare</tickerType>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+      <texPath>Things/Building/DTC_Bed/DTC_Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,0.95)</rect>
+      </damageData>
+    </graphicData>
+	 <costList>
+		<Steel>50</Steel>
+		<Plasteel>50</Plasteel>
+        <Gold>50</Gold>
+    </costList>
+    <statBases>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Flammability>0.5</Flammability>
+        <Beauty>5</Beauty>
+        <WorkToBuild>800</WorkToBuild>
+        <Mass>20</Mass>
+        <BedRestEffectiveness>1</BedRestEffectiveness>
+        <Comfort>0.75</Comfort>
+        <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+        <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+        <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">3</BirthRitualQualityOffset>
+    </statBases>
+    <size>(1,2)</size>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+    </building>
+	 <comps>
+        <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+                <li>EndTable</li>
+                <li>Dresser</li>
+                <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+	            <li>MHC_MechanicCabinet</li>
+            </linkableFacilities>
+        </li>
+		 <li Class="CompProperties_Power">
+			 <compClass>CompPowerTrader</compClass>
+			 <shortCircuitInRain>true</shortCircuitInRain>
+			 <basePowerConsumption>30</basePowerConsumption>
+		 </li>
+    </comps>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+	<defaultPlacingRot>South</defaultPlacingRot>
+    <techLevel>Ultra</techLevel>
+	    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+
+ </Defs>
