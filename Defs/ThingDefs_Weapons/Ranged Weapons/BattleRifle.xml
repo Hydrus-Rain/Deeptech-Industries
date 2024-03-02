@@ -6,6 +6,7 @@
 		<label>deeptech battle rifle(placeholder)</label>
 		<description>A Battle Rifle that came to be due to increasing need for adaptable high caliber solutions. Usually used by infantry or dedicated marksmen .</description>
 		<graphicData>
+			<drawSize>(2.1, 2.1)</drawSize>
 			<texPath>Things/Weapons/Ranged/Battlerifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
