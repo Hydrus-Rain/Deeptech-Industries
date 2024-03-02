@@ -1,11 +1,11 @@
 <Defs>
 	<ThingDef ParentName="BenchBase">
-		<defName>DTC_ProductionBenchOfSomething</defName>
-		<label>assembly bench</label>
-		<description>A workbench equipped with advanced tools to produce components.</description>
+		<defName>synthbench</defName>
+		<label>Synthesis bench</label>
+		<description>An advanced workbench for producing advanced technology.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Building/DTC_Bench/DTC_Bench</texPath>
+			<texPath>Things/Building/Synthbench/Synthbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
@@ -16,7 +16,7 @@
 			</damageData>
 			<drawSize>(3.5,1.5)</drawSize>
 		</graphicData>
-		<size>(3,2)</size>
+		<size>(3,1)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
