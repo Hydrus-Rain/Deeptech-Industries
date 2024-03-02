@@ -3,7 +3,7 @@
 	<!--Sword-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>DTC_MeleeWeapon_Broadsword</defName>
-		<label>deeptech sword(placeholder)</label>
+		<label>deeptech broadsword</label>
 		<description>An energy bladed Broadsword</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Broadsword</texPath>
@@ -12,7 +12,7 @@
 		<techLevel>Ultra</techLevel>
 		<statBases>
 			<WorkToMake>18000</WorkToMake>
-			<Mass>2</Mass>
+			<Mass>1.2</Mass>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<tools>
