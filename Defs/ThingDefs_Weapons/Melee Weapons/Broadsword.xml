@@ -53,7 +53,7 @@
 			<unfinishedThingDef>DTC_UnfinishedWeaponNonStuff</unfinishedThingDef>
 			<soundWorking>Recipe_Machining</soundWorking>
 			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
+				<li>synthbench</li>
 			</recipeUsers>
 			<researchPrerequisite>Fabrication</researchPrerequisite>
 			<skillRequirements>
