@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>4
+    <AlienRace.RaceSettings Abstract = "True">
+        <defName>DTC_ConstructRaceSettings</defName>
+    </AlienRace.RaceSettings>
+
+    <AlienRace.ThingDef_AlienRace ParentName="ATR_BaseMechanicalPawn">
+        <defName>DTC_Alien_Construct</defName>
+        <label>Deeptech Construct</label>
+        <description>placeholder.</description>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <alienRace>
+            <generalSettings>
+                <maleGenderProbability>0.5</maleGenderProbability>
+                <immuneToAge>true</immuneToAge>
+                <allowHumanBios>true</allowHumanBios>
+                <minAgeForAdulthood>20</minAgeForAdulthood>
+                <humanRecipeImport>true</humanRecipeImport>
+                    <alienPartGenerator>
+                        <headTypes Inherit  = "False">
+                            <li>Male_AverageNormal</li>
+                            <li>Female_AverageNormal</li>
+                        </headTypes>
+						<bodyTypes Inherit  = "False">
+                            <li>Male</li>
+                            <li>Female</li>
+                        </bodyTypes>
+                        <colorChannels Inherit = "False">
+                            <li>
+                                <name>skin</name>
+                                <first Class="ColorGenerator_Options">
+                                    <options>
+                                        <li>
+                                            <weight>1</weight>
+                                            <only>(255,255,255)</only>
+                                        </li>
+                                    </options>
+                                </first>
+                            </li>
+                        </colorChannels>
+                    </alienPartGenerator>
+				<corpseCategory>CorpsesMechanoid</corpseCategory>
+            </generalSettings>
+            <graphicPaths Inherit="false">
+                <body>
+                    <path>Things/Races/Construct/Body/</path>
+                    <bodytypeGraphics>
+                        <Male>Things/Races/Construct/Body/Standard</Male>
+                        <Female>Things/Races/Construct/Body/Standard</Female>
+                    </bodytypeGraphics>
+                </body>
+                <head>
+                    <path>Things/Races/Construct/Head/</path>
+                    <headtypeGraphics>
+                        <Male_AverageNormal>Things/Races/Construct/Head/Average_Normal</Male_AverageNormal>
+                        <Female_AverageNormal>Things/Races/Construct/Head/Average_Normal</Female_AverageNormal>
+                    </headtypeGraphics>
+                </head>
+            </graphicPaths>
+            <thoughtSettings>
+                <cannotReceiveThoughts>
+                    <li>Pain</li>
+                </cannotReceiveThoughts>
+            </thoughtSettings>
+            <relationSettings/>
+            <raceRestriction>
+                <apparelList>
+                    <li>DTC_DeeptechSuit</li>
+                    <li>DTC_VulcanArmor</li>
+                    <li>DTC_VulcanArmorHelmet</li>
+                </apparelList>
+                <canReproduce>false</canReproduce>
+            </raceRestriction>
+            <compatibility>
+                <isFlesh>false</isFlesh>
+                <isSentient>true</isSentient>
+                <hasBlood>false</hasBlood>
+            </compatibility>
+        </alienRace>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <MoveSpeed>5</MoveSpeed>
+            <ComfyTemperatureMax>26</ComfyTemperatureMax>
+            <ComfyTemperatureMin>-90</ComfyTemperatureMin>
+            <ToxicResistance>1</ToxicResistance>
+		    <MHC_MaintenanceRetention>1</MHC_MaintenanceRetention>
+            <MHC_NutritionalIntakeEfficiency>0.5</MHC_NutritionalIntakeEfficiency>
+            <MHC_ChargingSpeed>1</MHC_ChargingSpeed>
+        </statBases>
+		<tools>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+        <race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>22000</lifeExpectancy>
+            <nameCategory>HumanStandard</nameCategory>
+			<needsRest>false</needsRest>
+			<body>ATR_AndroidBody</body>
+			<foodType>OmnivoreHuman</foodType>
+<!--		<fleshType>ATR_AndroidTier</fleshType>-->
+			<bloodDef>ATR_CoolantAndroidTier</bloodDef>
+			<specificMeatDef>Steel</specificMeatDef>
+			<canBePredatorPrey>false</canBePredatorPrey>
+        </race>
+		<recipes>
+			<li>MHC_CoolantInjection</li>
+			<li>MHC_LubricantInjection</li>
+		</recipes>
+		<modExtensions>
+			<li Class="MechHumanlikes.MHC_MechanicalPawnExtension">
+				<droneSkillLevel>5</droneSkillLevel>
+				<blacklistedNeeds>
+					<li>DrugDesire</li>
+					<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+					<li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+					<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+				</blacklistedNeeds>
+				<blacklistedSapientNeeds>
+					<li>RoomSize</li>
+					<li>Comfort</li>
+				</blacklistedSapientNeeds>
+				<mechanicalNeeds>
+					<li>
+						<key>MHC_Coolant</key>
+						<value>3</value>
+					</li>
+					<li>
+						<key>MHC_Lubrication</key>
+						<value>2</value>
+					</li>
+				</mechanicalNeeds>
+			</li>
+		    <li MayRequire="Killathon.SkyMind.SkyMindNetwork" Class="SkyMind.SMN_PawnSkyMindExtension">
+                <defaultTransceiverImplant>ATR_AutonomousCore</defaultTransceiverImplant>
+                <defaultReceiverImplant>ATR_ReceiverCore</defaultReceiverImplant>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <Steel>50</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</butcherProducts>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>
