@@ -7,6 +7,7 @@
 		<description>An energy bladed Broadsword</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Broadsword</texPath>
+			<drawSize>(2.1, 2.1)</drawSize>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Ultra</techLevel>
