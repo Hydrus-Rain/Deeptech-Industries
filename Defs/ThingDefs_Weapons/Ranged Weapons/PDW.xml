@@ -6,6 +6,7 @@
 		<label>Personal Defense Weapon</label>
 		<description>a small cheap economic weapon thats easy to mass produce, yet being reliablr and light enough to be one-handed</description>
 		<graphicData>
+			<drawSize>(2.1, 2.1)</drawSize>
 			<texPath>Things/Weapons/Ranged/PDW</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
