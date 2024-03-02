@@ -8,7 +8,7 @@
     <graphicData>
       <texPath>Things/Buildings/Mechpod/Mechpod</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(1,2)</drawSize>
       <damageData>
         <rect>(0,0.05,1,0.95)</rect>
       </damageData>
