@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Assault Rifle-->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>DTI_EnergyCarbine</defName>
+		<label>Energy Carbine</label>
+		<description>Energy Carbine. Used by Infantry in clearing out infested areas, biohazards, or mech clusters, mainly for their reliability and self recharging ammo packs.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Ranged/Carbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>synthbench</li>
+			</recipeUsers>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>3.5</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Uranium>1</Uranium>
+			<Steel>75</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DTC_Bullet_AssaultRifleEnergy</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>22.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>DTC_Bullet_AssaultRifleEnergy</defName>
+		<label>deeptech assault rifle blast</label>
+		<graphicData>
+			<texPath>Things/Weapons/Ranged/Deeptech_EnergyBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>58</speed>
+		</projectile>
+	</ThingDef>
+</Defs>
