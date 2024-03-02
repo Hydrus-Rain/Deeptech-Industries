@@ -8,7 +8,7 @@
     <graphicData>
       <texPath>Things/Buildings/Mechpod/Mechpod</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2, 2)</drawSize>
+      <drawSize>(1,1)</drawSize>
       <damageData>
         <rect>(0,0.05,1,0.95)</rect>
       </damageData>
@@ -16,7 +16,6 @@
 	 <costList>
 		<Steel>50</Steel>
 		<Plasteel>50</Plasteel>
-        <Gold>50</Gold>
     </costList>
     <statBases>
         <MaxHitPoints>200</MaxHitPoints>
