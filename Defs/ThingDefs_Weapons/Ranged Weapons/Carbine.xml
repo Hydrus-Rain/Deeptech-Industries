@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Ranged/Carbine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,2.1)</drawSize>
 		</graphicData>
 		<soundInteract>Interact_SMG</soundInteract>
 		<recipeMaker>
