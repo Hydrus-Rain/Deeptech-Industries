@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Sword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.9,1.9)</drawSize>
 		</graphicData>
 		<techLevel>Ultra</techLevel>
 		<statBases>
