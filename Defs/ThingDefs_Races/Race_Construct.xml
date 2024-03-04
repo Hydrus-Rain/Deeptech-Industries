@@ -44,17 +44,17 @@
             <graphicPaths Inherit="false">
                 <body>
                     <path>Things/Pawn/Construct/Body/</path>
-                    <bodytypeGraphics>
+                    <bodyTypeGraphics>
                         <Male>Textures/Things/Pawn/Construct/Body/Standard</Male>
                         <Female>Textures/Things/Pawn/Construct/Body/Standard</Female>
-                    </bodytypeGraphics>
+                    </bodyTypeGraphics>
                 </body>
                 <head>
                     <path>Things/Races/Construct/Head/</path>
-                    <headtypeGraphics>
+                    <headTypeGraphics>
                         <Male_AverageNormal>Things/Pawn/Construct/Head/Average_Normal</Male_AverageNormal>
                         <Female_AverageNormal>Things/Pawn/Construct/Head/Average_Normal</Female_AverageNormal>
-                    </headtypeGraphics>
+                    </headTypeGraphics>
                 </head>
             </graphicPaths>
             <thoughtSettings>
