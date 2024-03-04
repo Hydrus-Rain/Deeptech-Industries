@@ -45,8 +45,8 @@
                 <body>
                     <path>Things/Pawn/Construct/Body/</path>
                     <bodyTypeGraphics>
-                        <Male>Textures/Things/Pawn/Construct/Body/Standard</Male>
-                        <Female>Textures/Things/Pawn/Construct/Body/Standard</Female>
+                        <Male>Things/Pawn/Construct/Body/Standard</Male>
+                        <Female>Things/Pawn/Construct/Body/Standard</Female>
                     </bodyTypeGraphics>
                 </body>
                 <head>
