@@ -22,25 +22,4 @@
             </li>
         </comps>
     </ThingDef>
-    <ThingDef ParentName="ATR_MakeableGeneratorBase">
-        <defName>DTC_Bull_Maker</defName>
-        <label>Mechbull</label>
-        <description>Placeholder</description>
-        <graphicData>
-            <texPath>Things/Races/Mechanoid/Mechbull/DT_Mechbull_east</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <recipeMaker>
-            <researchPrerequisite>Fabrication</researchPrerequisite>
-        </recipeMaker>
-        <costList>
-            <Steel>40</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
-        </costList>
-        <comps>
-            <li Class="ATReforged.CompProperties_PawnSpawner">
-                <pawnKind>DTC_Bull</pawnKind>
-            </li>
-        </comps>
-    </ThingDef>
 </Defs>
