@@ -74,7 +74,7 @@
 		<defName>DTC_Bullet_AssaultRifleEnergy</defName>
 		<label>deeptech assault rifle blast</label>
 		<graphicData>
-			<texPath>Things/Weapons/Ranged/Deeptech_EnergyBullet</texPath>
+			<texPath>Things/Weapon/Ranged/Deeptech_EnergyBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
