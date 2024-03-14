@@ -2,8 +2,8 @@
 <Defs>
 	<!--Sword-->
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>DTC_MeleeWeapon_Sword</defName>
-		<label>deeptech sword(placeholder)</label>
+		<defName>DTC__Sword</defName>
+		<label>Riftblade</label>
 		<description>a single edged Rift sword,lighter and faster but hits weaker than the broadsword</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Sword</texPath>
@@ -22,8 +22,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
+				<power>10</power>
+				<cooldownTime>1</cooldownTime>
 			</li>
 			<li>
 				<label>point</label>
@@ -31,15 +31,15 @@
 					<li>Stab</li>
 				</capacities>
 				<power>33</power>
-				<cooldownTime>2.6</cooldownTime>
+				<cooldownTime>1.5</cooldownTime>
 			</li>
 			<li>
 				<label>edge</label>
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>33</power>
-				<cooldownTime>2.6</cooldownTime>
+				<power>43</power>
+				<cooldownTime>1.6</cooldownTime>
 			</li>
 		</tools>
 		<costList>
